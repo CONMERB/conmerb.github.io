@@ -10,7 +10,7 @@
     <p>Datos del usuario:</p>
     <ul>
         <li><strong>Nombre:</strong> Abdon Mamani Rojas</li>
-        <li><strong>CI:</strong> 10018548</li>
+        <li><strong>CI:</strong> 4753027</li>
     </ul>
     <h2>Registro de Datos</h2>
     <form id="registroForm">
