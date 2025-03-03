@@ -3,41 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CONMERB - Registro de Datos</title>
+    <title>CONMERB - Registro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        p {
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-    <h1>Bienvenido a CONMERB</h1>
-    <p>Datos del usuario:</p>
-    <ul>
-        <li><strong>Nombre:</strong> Abdon Mamani Rojas</li>
-        <li><strong>CI:</strong> 4753027</li>
-    </ul>
-    <h2>Registro de Datos</h2>
-    <form id="registroForm">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" required><br><br>
-        <label for="ci">CI:</label>
-        <input type="text" id="ci" required><br><br>
-        <button type="submit">Guardar</button>
-    </form>
-    <h3>Datos Guardados:</h3>
-    <p id="datosGuardados"></p>
+    <h1>CONFEDERACIÓN NACIONAL DE MAESTROS DE EDUCACIÓN RURAL DE BOLIVIA</h1>
+    <h2>CONMERB</h2>
+    <p><strong>PARTICIPANTE:</strong></p>
+    <p>Abdon Mamani Rojas</p>
+    <p>CI: 4753027</p>
+</body>
+</html>
 
-    <script>
-        document.getElementById('registroForm').addEventListener('submit', function(event) {
-            event.preventDefault();
-            const nombre = document.getElementById('nombre').value;
-            const ci = document.getElementById('ci').value;
-            localStorage.setItem('usuarioNombre', nombre);
-            localStorage.setItem('usuarioCI', ci);
-            mostrarDatos();
-        });
-
-        function mostrarDatos() {
-            const nombre = localStorage.getItem('usuarioNombre') || "No registrado";
-            const ci = localStorage.getItem('usuarioCI') || "No registrado";
-            document.getElementById('datosGuardados').innerText = `Nombre: ${nombre}, CI: ${ci}`;
-        }
         
         mostrarDatos();
     </script>
